@@ -1,7 +1,7 @@
 import { Account, Avatars, Client } from 'appwrite';
 
 export const SsrHostname: string = 'bash.lv';
-export const AppwriteHostname: string = 'bash.lv';
+export const AppwriteHostname: string = 'b.bash.lv';
 
 export const AppwriteEndpoint = 'https://b.bash.lv/v1';
 export const AppwriteProject = 'SSR';

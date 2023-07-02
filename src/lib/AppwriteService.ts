@@ -1,10 +1,10 @@
 import { Account, Avatars, Client } from 'appwrite';
 
-export const SsrHostname: string = 'appwrite-ssr-svelte-kit-chi.vercel.app';
-export const AppwriteHostname: string = 'appwrite-ssr-svelte-kit-chi.vercel.app';
+export const SsrHostname: string = 'bash.lv';
+export const AppwriteHostname: string = 'bash.lv';
 
-export const AppwriteEndpoint = 'https://cloud.appwrite.io/v1';
-export const AppwriteProject = 'ssrtest';
+export const AppwriteEndpoint = 'https://b.bash.lv/v1';
+export const AppwriteProject = 'SSR';
 
 const client = new Client();
 client.setEndpoint(AppwriteEndpoint).setProject(AppwriteProject);

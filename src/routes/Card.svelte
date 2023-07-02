@@ -13,6 +13,9 @@
 			account = null;
 		}
 	}
+	if (account === undefined || account === null) {
+		fetchAccount()
+	}
 </script>
 
 <div

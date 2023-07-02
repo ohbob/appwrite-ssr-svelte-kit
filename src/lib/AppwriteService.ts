@@ -1,10 +1,10 @@
 import { Account, Avatars, Client } from 'appwrite';
 
-export const SsrHostname: string = 'svelte-kit.ssr.almostapps.eu';
-export const AppwriteHostname: string = 'appwrite.svelte-kit.ssr.almostapps.eu';
+export const SsrHostname: string = 'appwrite-ssr-svelte-kit-chi.vercel.app';
+export const AppwriteHostname: string = 'appwrite-ssr-svelte-kit-chi.vercel.app';
 
-export const AppwriteEndpoint = 'https://appwrite.svelte-kit.ssr.almostapps.eu/v1';
-export const AppwriteProject = 'almostSsr';
+export const AppwriteEndpoint = 'https://cloud.appwrite.io/v1';
+export const AppwriteProject = 'ssrtest';
 
 const client = new Client();
 client.setEndpoint(AppwriteEndpoint).setProject(AppwriteProject);

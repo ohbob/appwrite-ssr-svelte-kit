@@ -16,7 +16,7 @@
 	async function onCreateSession() {
 		isLoading = true;
 		try {
-			const res = await fetch('/login', {
+			await fetch('/login', {
 				method: 'POST',
 				body: ''
 			});
@@ -118,37 +118,37 @@
 	</div>
 </main>
 
-<div>
-	<dialog class="modal is-small" id="dialog">
-		<form class="modal-form" method="dialog">
-			<header class="modal-header u-flex u-gap-12 u-cross-center" style="flex-direction: row;">
-				{#if modalType === 'error'}
-					<div class="avatar is-color-orange is-medium">
-						<span class="icon-exclamation" aria-hidden="true" />
-					</div>
-					<h4 class="modal-title heading-level-5">Error 🚨</h4>
-				{:else}
-					<div class="avatar is-color-green is-medium">
-						<span class="icon-check" aria-hidden="true" />
-					</div>
-					<h4 class="modal-title heading-level-5">Success 🎉</h4>
-				{/if}
-			</header>
-			<div class="modal-content u-small">{modalMessage}</div>
-			<div class="modal-footer">
-				<div class="u-flex u-main-end u-gap-16">
-					<button
-						on:click={() => {
-							modalMessage = '';
-							modalType = '';
-							dialog.close();
-						}}
-						class="button is-secondary"
-					>
-						<span class="text">Close</span>
-					</button>
-				</div>
-			</div>
-		</form>
-	</dialog>
-</div>
+<!--<div>-->
+<!--	<dialog class="modal is-small" id="dialog">-->
+<!--		<form class="modal-form" method="dialog">-->
+<!--			<header class="modal-header u-flex u-gap-12 u-cross-center" style="flex-direction: row;">-->
+<!--				{#if modalType === 'error'}-->
+<!--					<div class="avatar is-color-orange is-medium">-->
+<!--						<span class="icon-exclamation" aria-hidden="true" />-->
+<!--					</div>-->
+<!--					<h4 class="modal-title heading-level-5">Error 🚨</h4>-->
+<!--				{:else}-->
+<!--					<div class="avatar is-color-green is-medium">-->
+<!--						<span class="icon-check" aria-hidden="true" />-->
+<!--					</div>-->
+<!--					<h4 class="modal-title heading-level-5">Success 🎉</h4>-->
+<!--				{/if}-->
+<!--			</header>-->
+<!--			<div class="modal-content u-small">{modalMessage}</div>-->
+<!--			<div class="modal-footer">-->
+<!--				<div class="u-flex u-main-end u-gap-16">-->
+<!--					<button-->
+<!--						on:click={() => {-->
+<!--							modalMessage = '';-->
+<!--							modalType = '';-->
+<!--							dialog.close();-->
+<!--						}}-->
+<!--						class="button is-secondary"-->
+<!--					>-->
+<!--						<span class="text">Close</span>-->
+<!--					</button>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</form>-->
+<!--	</dialog>-->
+<!--</div>-->

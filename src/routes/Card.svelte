@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { AppwriteService } from '$lib/AppwriteService';
 	import type { Models } from 'appwrite';
+	import { onMount } from "svelte";
 	export let account: undefined | null | true | Models.User<any> = undefined;
 	export let isCsr = false;
 
@@ -13,9 +14,18 @@
 			account = null;
 		}
 	}
+
 	if (account === undefined || account === null) {
-		fetchAccount()
+		fetchAccount();
 	}
+
+	onMount(()=> {
+		if (isCsr) fetchAccount()
+	})
+
+
+
+
 </script>
 
 <div

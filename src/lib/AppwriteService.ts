@@ -1,7 +1,7 @@
 import { Account, Avatars, Client } from 'appwrite';
 
-export const SsrHostname: string = 'bash.lv';
-export const AppwriteHostname: string = 'b.bash.lv';
+export const SsrHostname = 'bash.lv';
+export const AppwriteHostname = 'b.bash.lv';
 
 export const AppwriteEndpoint = 'https://b.bash.lv/v1';
 export const AppwriteProject = 'SSR';
@@ -20,7 +20,7 @@ export const AppwriteService = {
 		return await account.get<any>();
 	},
 	getAccountPicture: (name: string) => {
-		return avatars.getInitials(name.split("").reverse().join(""), 256, 256).toString();
+		return avatars.getInitials(name.split('').reverse().join(''), 256, 256).toString();
 	},
 	setSession: (hash: string) => {
 		const authCookies: any = {};

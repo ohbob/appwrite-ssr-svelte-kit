@@ -13,6 +13,8 @@
 			account = null;
 		}
 	}
+
+	if (isCsr) fetchAccount()
 </script>
 
 <div
